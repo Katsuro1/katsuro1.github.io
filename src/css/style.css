@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+
+.logo {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+    padding-left: 390px;
+}
+
+.menu {
+    float: left;
+    padding-left: 430px;
+
+}
+
+.menu li {
+    float: left;
+    font-size: 16px;
+    color: white;
+    line-height: 60px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bc.jpg) center/cover no-repeat;
+
+}
+
+.title__container {
+    float: left;
+    margin: 404px 0px 0px 432px;
+    color: #2c384a;
+    text-align: center;
+
+}
+
+
+.title__container h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title__container h4 {
+    color: #79818d;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.title__container input {
+    width: 96px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 50px 14px 0px 14px;
+}
+
+.about_me_container h2 {
+    text-align: center;
+    width: 156px;
+    font-size: 33px;
+    margin: 110px auto 15px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #263244;
+}
+
+.about_me_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 80px;
+}
+
+.about_me_container {
+    width: 730px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.about_me_container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.about_me_container p {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #3f495a;
+}
+
+.about_me_container .secondText {
+    margin-top: 42px;
+}
+
+.about_me_container a {
+    display: block;
+    color: #596271;
+    height: 33px;
+    width: 155px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    line-height: 30px;
+    margin: 40px auto;
+    background: url(../img/back.png) 6%/auto no-repeat;
+    padding-left: 18px;
+}
+
+.what_i_do {
+    background: url(../img/doing.png) center/cover no-repeat;
+
+}
+
+.what_i_do_conteiner {
+    margin: 0 auto;
+    padding-bottom: 110px;
+    padding-top: 108px;
+    width: 1100px;
+}
+
+.what_i_do_conteiner h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #263244;
+    font-size: 33px;
+    padding-bottom: 5px;
+    margin: 0px auto 15px;
+
+}
+
+.what_i_do_conteiner hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 80px;
+}
+
+.personal {
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin: 0px 36px;
+}
+
+.personal img {
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.personal h3 {
+    font-size: 18px;
+    color: #cf7600;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.personal p {
+    color: #515a69;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.clear {
+    clear: both;
+}
+
+.cases_container {
+    padding-top: 115px;
+    padding-bottom: 130px;
+}
+
+.cases_container {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+.cases_container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #263244;
+    font-size: 33px;
+    padding-bottom: 5px;
+    margin-bottom: 0px auto 30px;
+
+}
+
+.cases_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 15px auto 50px;
+}
+
+.cases_container .textCases1 {
+    text-align: center;
+    color: #263244;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.cases_container img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.contain_left {
+    float: left;
+    width: 210px;
+    margin-right: 85px;
+    color: #384354;
+}
+
+.contain_right h3 {
+    font-size: 25px;
+    color: #384354;
+    font-weight: bolder;
+}
+
+.contain_right .textCases2 {
+    font-size: 18px;
+    margin: 16px 0px;
+    color: #384354;
+
+}
+
+.contain_left p {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.contain_left a {
+    display: block;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    background-color: #63b5ae;
+    color: white;
+    border: 2px solid ;
+    border-radius: 10px;
+    line-height: 30px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    padding-top: 7px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.contain_left h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
