@@ -256,20 +256,17 @@ nav {
 }
 
 .contain_left a {
-    display: block;
-    height: 45px;
-    width: 200px;
-    text-align: center;
-    background-color: #63b5ae;
-    color: white;
-    border: 2px solid ;
-    border-radius: 10px;
-    line-height: 30px;
-    margin-top: 25px;
     text-transform: uppercase;
-    padding-top: 7px;
-    font-weight: bolder;
-    font-size: 16px;
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    background: #63b5ae;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
 }
 
 .contain_left h4 {
