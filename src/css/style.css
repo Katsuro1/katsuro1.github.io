@@ -274,3 +274,349 @@ nav {
     margin-bottom: 10px;
     font-weight: bolder;
 }
+
+.calculator {
+    padding-bottom: 62px;
+    margin-top: 130px;
+
+}
+
+.calculator_container {
+    width: 1080px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin: 0px auto;
+    padding-top: 63px;
+    padding-bottom: 90px;
+}
+
+.calculator_container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33px;
+    color: #1c2534;
+    font-weight: bolder;
+}
+
+.calculator_container h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #1c2534;
+    padding-top: 55px;
+    padding-left: 100px;
+    font-weight: bolder;
+
+}
+
+#typesite {
+    display: block;
+    width: 890px;
+    height: 60px;
+    color: #737373;
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 23px auto 0px auto;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 18px;
+    background:
+
+}
+
+.inner hr {
+    height: 2px;
+    border: none;
+    background: #d1d1d1;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+}
+
+.calculator_footer {}
+
+.calculator_footer .text {
+    float: left;
+    font-size: 21px;
+
+}
+
+.class1 {
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+.class2 {
+    margin-bottom: 20px;
+    padding-right: 100px;
+
+}
+
+.class3 {
+    padding-left: 100px;
+
+}
+
+.class4 {
+    padding-right: 100px;
+}
+
+.calculator_footer .digit {
+    float: right;
+    font-size: 21px;
+
+}
+
+.results {
+    background: url(../img/results.png) center/cover
+}
+
+.results_container {
+    width: 1024px;
+    margin: 0px auto;
+    padding-bottom: 100px;
+}
+
+.results_container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: bolder;
+    color: #323e4f;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: 0px auto 30px;
+
+}
+
+.results_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 90px;
+}
+
+.imga {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.results_container img {
+    height: 64px;
+}
+
+.results_container h3 {
+    color: #323e4f;
+    font-size: 23px;
+    font-weight: bolder;
+    margin: 34px 0;
+}
+
+.results_container p {
+    font-size: 18px;
+    color: #323e4f;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.comments_container {
+    margin-top: 100px;
+    width: 700px;
+    padding-bottom: 140px;
+    margin: 0 auto;
+}
+
+.comments_container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33px;
+    font-weight: bolder;
+    color: #323e4f;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: 0px auto 37px;
+}
+
+.comments_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+}
+
+.comments {
+    text-align: center;
+}
+
+.comments_container img {
+    margin-bottom: 36px;
+}
+
+.class12 {
+    font-size: 18px;
+    color: #243042;
+    line-height: 24px;
+    margin-bottom: 36px;
+}
+
+.class22 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.class22 span {
+    font-weight: bolder;
+}
+
+.contacts {
+    background: url(../img/backside.png) center/cover no-repeat;
+    color: white;
+
+}
+
+.contacts_container {
+    width: 734px;
+    margin: 0 auto;
+    padding-bottom: 68px;
+}
+
+.contacts_container h2 {
+    text-align: center;
+    width: 390px;
+    font-size: 33px;
+    margin: 0px auto 30px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.contacts_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 32px;
+}
+
+.text_contacts {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.contacts1 {
+    float: left;
+    width: 154px;
+    text-align: center;
+    margin: 0 45px;
+
+}
+
+.contacts1 img {
+    height: 24px;
+    margin-bottom: 16px;
+
+}
+
+.contacts1 p {
+    font-size: 18px;
+}
+
+.contacts_container h3 {
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-top: 170px;
+    margin-bottom: 40px;
+ }
+
+.firstInput {
+    display: block;
+    width: 350px;
+    float: left;
+    height: 34px;
+    padding-left: 14px;
+    margin-bottom: 14px;
+    background: rgba(210, 214, 220, 0.93);
+    font-size: 16px;
+
+}
+
+.secondInput {
+    float: right;
+    display: block;
+    width: 362px;
+    float: left;
+    height: 34px;
+    padding-left: 14px;
+    margin-bottom: 14px;
+    background: rgba(210, 214, 220, 0.93);
+    font-size: 16px;
+    margin-left: 22px;
+
+}
+
+.contacts_container textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    padding-top: 10px;
+    background: rgba(220, 224, 230, 0.93);
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 14px;
+}
+
+.contacts_container input[type="submit"] {
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.icons{
+    width: 600px;
+    margin: 0 110px;
+    
+}
+
+.icons a{
+    display: inline-flex;
+    float: left;
+    margin: 0px 30px;
+}
+.icons img{
+    height: 31px;
+}
+
+.map{
+    background-size: cover;
+    width: 100%;
+    
+}
+.footer{
+    background: #354051;
+    height: 94px;
+}
+.footer_container{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 94px;
+}
