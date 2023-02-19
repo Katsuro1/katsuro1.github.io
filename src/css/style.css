@@ -1,11 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
 }
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #21D4FD;
+    background-image: linear-gradient(19deg, #1b3666 0%, #1f6394 100%);
+    z-index: 1001;
+    color: #eee;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+
+/*Убрать полосу прокрутки у элемента*/
+.element::-webkit-scrollbar {
+    width: 0;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+    width: 0;
+}
+
 
 nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    opacity: 1;
 }
 
 .logo {
@@ -14,7 +76,21 @@ nav {
     font-size: 30px;
     line-height: 60px;
     padding-left: 390px;
+    -webkit-animation: coming 2s ease;
+    -o-animation: coming 2s ease;
+    animation: coming 2s ease;
 }
+
+@keyframes coming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 .menu {
     float: left;
@@ -29,35 +105,101 @@ nav {
     line-height: 60px;
     margin-right: 40px;
     text-transform: uppercase;
+    -webkit-animation: topshift 1s ease forwards;
+    -o-animation: topshift 1s ease forwards;
+    animation: topshift 1s ease forwards;
+    opacity: 0;
 }
 
 .menu li a:visited {
     color: white;
 }
 
+.menu li a:hover {
+    color: #e88604;
+}
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bc.jpg) center/cover no-repeat;
 
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
 .title__container {
     float: left;
-    margin: 404px 0px 0px 432px;
+    margin: 404px 0 0 432px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
 
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 
 .title__container h1 {
+    font-family: Montserrat, sans-serif;
     font-size: 60px;
     text-align: center;
     font-weight: bold;
 }
 
 .title__container h4 {
+    font-family: Montserrat, sans-serif;
     color: #79818d;
     text-align: center;
     margin-top: 30px;
@@ -74,17 +216,66 @@ nav {
     color: #6d7682;
     font-size: 13px;
     cursor: pointer;
-    margin: 50px 14px 0px 14px;
+    margin: 50px 14px 0 14px;
 }
 
+.title__container input {
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.title__container input:hover {
+    background: #344051;
+    color: white;
+}
+
+.title__container input:active {
+    transform: scale(1.4);
+}
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+.custom_css3{
+    font-size: 30px;
+    animation: 1s linear 0s normal none infinite running icon;
+}
+@keyframes icon{
+    from{
+    transform: rotate(0deg);
+        }
+    to{
+        transform: rotate(360deg);
+    }
+}
 .about_me_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
-    width: 156px;
+    width: 175px;
     font-size: 33px;
     margin: 110px auto 15px;
     padding-bottom: 5px;
     text-transform: uppercase;
     color: #263244;
+    -webkit-animation: aboutmemoves 1s ease forwards;
+    -o-animation: aboutmemoves 1s ease forwards;
+    animation: aboutmemoves 1s ease forwards;
+    opacity: 0;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.about_me_container input:active {
+    transform: scale(1.4);
 }
 
 .about_me_container hr {
@@ -128,11 +319,36 @@ nav {
     margin: 40px auto;
     background: url(../img/back.png) 6%/auto no-repeat;
     padding-left: 18px;
+    transition: all 0.1s;
+    transform: scale(1);
+
+}
+
+@keyframes aboutmemoves {
+    from {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    to {
+        opacity: 1;
+        margin-bottom: 40px;
+    }
+}
+
+.about_me_container a:hover {
+    background: #344051;
+    color: white;
+}
+
+.about_me_container a:active {
+    background: #e88604;
+    color: white;
+    transform: scale(1.1);
 }
 
 .what_i_do {
     background: url(../img/doing.png) center/cover no-repeat;
-
 }
 
 .what_i_do_conteiner {
@@ -143,12 +359,13 @@ nav {
 }
 
 .what_i_do_conteiner h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #263244;
     font-size: 33px;
     padding-bottom: 5px;
-    margin: 0px auto 15px;
+    margin: 0 auto 15px;
 
 }
 
@@ -164,25 +381,62 @@ nav {
     float: left;
     width: 200px;
     text-align: center;
-    margin: 0px 36px;
+    margin: 0 36px;
 }
 
 .personal img {
     height: 40px;
     margin-bottom: 40px;
+    -webkit-animation-name: images;
+    -o-animation-name: images;
+    animation-name: images;
+    -webkit-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, 1.65, 1, -0.95);
+}
+
+@keyframes images {
+    from {
+        opacity: 0;
+        margin-left: 500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-right: auto;
+    }
 }
 
 .personal h3 {
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     color: #cf7600;
     margin-bottom: 20px;
     font-weight: bolder;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, 1.65, 1, -0.95);
 }
 
 .personal p {
     color: #515a69;
     font-size: 16px;
     font-weight: normal;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0, 1.65, 1, -0.95);
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .clear {
@@ -192,20 +446,46 @@ nav {
 .cases_container {
     padding-top: 115px;
     padding-bottom: 130px;
+    animation-name: cases;
+    animation-duration: 2s;
+
+}
+
+@keyframes cases {
+    10% {
+        transform: rotate(0deg);
+        opacity: 0.2;
+    }
+
+    33% {
+        transform: rotate(180deg);
+        opacity: 0.5;
+    }
+
+    66% {
+        transform: rotate(380deg);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: rotate(123213deg);
+        opacity: 1;
+    }
 }
 
 .cases_container {
     width: 1170px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .cases_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #263244;
     font-size: 33px;
     padding-bottom: 5px;
-    margin-bottom: 0px auto 30px;
+    margin: 0 auto;
 
 }
 
@@ -238,6 +518,7 @@ nav {
 }
 
 .contain_right h3 {
+    font-family: Montserrat, sans-serif;
     font-size: 25px;
     color: #384354;
     font-weight: bolder;
@@ -245,7 +526,7 @@ nav {
 
 .contain_right .textCases2 {
     font-size: 18px;
-    margin: 16px 0px;
+    margin: 16px 0;
     color: #384354;
 
 }
@@ -283,15 +564,16 @@ nav {
 
 .calculator_container {
     width: 1080px;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-    margin: 0px auto;
+    -webkit-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+    margin: 0 auto;
     padding-top: 63px;
     padding-bottom: 90px;
 }
 
 .calculator_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 33px;
@@ -300,6 +582,7 @@ nav {
 }
 
 .calculator_container h3 {
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     color: #1c2534;
@@ -316,14 +599,12 @@ nav {
     color: #737373;
     background-color: #eee;
     border-radius: 8px;
-    margin: 23px auto 0px auto;
+    margin: 23px auto 0 auto;
     padding-left: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     font-size: 18px;
-    background:
-
 }
 
 .inner hr {
@@ -336,7 +617,7 @@ nav {
 }
 
 
-}
+
 
 .calculator_footer {}
 
@@ -373,16 +654,20 @@ nav {
 }
 
 .results {
-    background: url(../img/results.png) center/cover
+    background: url(../img/results.png) center/cover;
+    background-attachment: fixed;
 }
+
 
 .results_container {
     width: 1024px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-bottom: 100px;
+
 }
 
 .results_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 33px;
@@ -391,7 +676,7 @@ nav {
     padding-top: 100px;
     margin-bottom: 20px;
     width: 400px;
-    margin: 0px auto 30px;
+    margin: 0 auto 30px;
 
 }
 
@@ -414,6 +699,7 @@ nav {
 }
 
 .results_container h3 {
+    font-family: Montserrat, sans-serif;
     color: #323e4f;
     font-size: 23px;
     font-weight: bolder;
@@ -436,6 +722,7 @@ nav {
 }
 
 .comments_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 33px;
@@ -444,7 +731,7 @@ nav {
     padding-top: 100px;
     margin-bottom: 20px;
     width: 400px;
-    margin: 0px auto 37px;
+    margin: 0 auto 37px;
 }
 
 .comments_container hr {
@@ -492,10 +779,11 @@ nav {
 }
 
 .contacts_container h2 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     width: 390px;
     font-size: 33px;
-    margin: 0px auto 30px;
+    margin: 0 auto 30px;
     padding-bottom: 5px;
     text-transform: uppercase;
     padding-top: 100px;
@@ -534,12 +822,13 @@ nav {
 }
 
 .contacts_container h3 {
+    font-family: Montserrat, sans-serif;
     text-align: center;
     font-size: 21px;
     text-transform: uppercase;
     margin-top: 170px;
     margin-bottom: 40px;
- }
+}
 
 .firstInput {
     display: block;
@@ -590,31 +879,35 @@ nav {
     margin: auto;
     margin-bottom: 80px;
 }
-.icons{
+
+.icons {
     width: 600px;
     margin: 0 110px;
-    
+
 }
 
-.icons a{
+.icons a {
     display: inline-flex;
     float: left;
-    margin: 0px 30px;
+    margin: 0 30px;
 }
-.icons img{
+
+.icons img {
     height: 31px;
 }
 
-.map{
+.map {
     background-size: cover;
     width: 100%;
-    
+
 }
-.footer{
+
+.footer {
     background: #354051;
     height: 94px;
 }
-.footer_container{
+
+.footer_container {
     color: white;
     font-size: 18px;
     text-align: center;

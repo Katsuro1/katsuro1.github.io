@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.white-btn {
+    color: white;
+    border-color: coral;
+}
+
+.logo {
+    font-family: Montserrat, Arial, sans-serif;
+    color: white;
+    font-size: 21px;
+    line-height: 60px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    font-family: Montserrat, Arial, sans-serif;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-right: 34px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a:visited {
+    color: #fff;
+}
+
+.menu li a:hover {
+    color: #e88604;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bc.jpg) center/cover no-repeat;
+
+}
+
+.title__container {
+    color: #2c384a;
+    text-align: center;
+    width: 100%;
+
+}
+
+.title__container h1 {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.title__container h4 {
+    font-family: Montserrat, Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color: #79818d;
+    font-size: 20px;
+}
+
+
+.title__container input {
+    font-family: Montserrat, Arial, sans-serif;
+    width: 100px;
+    border: 1px solid #6d7682;
+    height: 37px;
+    border-radius: 7px;
+    background: none;
+    text-align: center;
+    color: #6d7682;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 50px 14px 0 14px;
+}
+
+@media (max-width: 991px) {
+
+    .title__container,
+    .title__container h4,
+    .title__container input {
+        color: white;
+        border-color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .main{
+        position: relative;
+        
+    }
+    .main::after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left:0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+}
+
+.about_me_container h2 {
+    font-family: Montserrat, Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 110px;
+    text-transform: uppercase;
+
+}
+
+.about_me_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+    opacity: 1;
+
+}
+
+.about_me_container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.firstText {
+    text-align: center;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #3f495a;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.secondText {
+    text-align: center;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #3f495a;
+    font-size: 17px;
+    margin-top: 42px;
+}
+
+.about_me_container a {
+    font-family: Montserrat, Arial, sans-serif;
+    display: block;
+    width: 170px;
+    height: 33px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    line-height: 30px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    background: url(../img/input.png) 6%/auto no-repeat;
+    padding-left: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.about_me_container {
+    padding-bottom: 100px;
+
+}
+
+.skills {
+    background: url(../img/doing.png) center/cover no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    font-family: Montserrat, Arial, sans-serif;
+
+
+}
+
+.skills_container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.skills_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+    opacity: 1;
+
+}
+
+.skills_container h3 {
+    margin-top: 25px;
+    text-align: center;
+    color: #cf7600;
+    font-size: 18px;
+}
+
+.skills_container p {
+    color: #515a69;
+    font-size: 16px;
+    margin-bottom: 70px;
+
+}
+
+
+.cases_container {
+    display: block;
+    padding-top: 110px;
+    padding-bottom: 128px;
+}
+
+.cases_container {}
+
+.cases_container h2 {
+    text-align: center;
+    width: 214px;
+    font-size: 33px;
+    margin: 0px auto 30px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+
+}
+
+.cases_container hr {
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 40px;
+    opacity: 1;
+
+}
+
+.cases_container {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: Montserrat, Arial, sans-serif;
+
+}
+
+.cases_container img {
+    width: 70%;
+    margin-bottom: 60px;
+
+}
+
+.description_left {}
+
+.description_left h3 {
+    font-size: 25px;
+    text-align: left;
+}
+
+.description_left p {
+    font-size: 17px;
+    margin: 16px 0;
+    text-align: left;
+}
+
+.description_left a,
+.calculator_footer button {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    background: #63b5ae;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.description_right h4 {
+    padding-left: 10%;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.description_right p {
+    padding-left: 10%;
+    font-size: 20px;
+    text-align: left;
+}
