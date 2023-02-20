@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Бета тест страницы">
     <meta name="author" content="Ilya">
     <meta name="robots" content="all">
     <meta property="og:title" content="Бета тест страницы">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Андрекй Браун</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,8 +16,6 @@
 </head>
 
 <body>
-
-
 
     <header>
         <nav>
@@ -67,9 +63,7 @@
         </nav>
     </header>
 
-
     <main>
-
 
         <section class="main">
             <div class="container h-100">
@@ -85,10 +79,16 @@
                 </div>
             </div>
         </section>
+
         <section class="about_me">
             <div class="about_me_container container">
                 <div class="row justify-content-center">
-                    <div class="col------------------------------">
+                    <div class="col-xxl-8 
+                                col-xl-8
+                                col-lg-8
+                                col-md-12
+                                col-sm-12
+                                col-xs-12">
                         <h2>Обо мне</h2>
                         <hr>
                         <img src="img/photoboy.png" alt="">
@@ -104,22 +104,42 @@
                 <h2>Что я умею</h2>
                 <hr>
                 <div class="row justify-content-center text-center">
-                    <div class="col-3">
+                    <div class="col-xxl-3
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
                         <img src="img/pc.png" alt="">
                         <h3>Веб-дизайн</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quasi eos, corrupti laborum, provident facere!</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xxl-3
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
                         <img src="img/slash.png" alt="">
                         <h3>Разработка</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nam, non excepturi quisquam vero? Hic?</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xxl-3 
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
                         <img src="img/racket.png" alt="">
                         <h3>CEO-оптимизация</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reprehenderit tenetur reiciendis laudantium corrupti sint.</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-xxl-3 
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
                         <img src="img/voice.png" alt="">
                         <h3>Маркетинг</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cumque explicabo, modi corporis delectus odit.</p>
@@ -151,21 +171,208 @@
 
             </div>
         </section>
+        <section class="calculator">
+            <div class="calculator_container container">
+                <h2>Расчет стоимости</h2>
+                <div class="calculator_inner">
+                    <h3>Тип сайта</h3>
+                    <select class="mySelect" name="type" id="typesite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Сайт-визитка</option>
+                        <option value="3">Интернет-магазин</option>
+                        <option value="4">Корпоративный сайт</option>
+                    </select>
+                    <h3>Дизайн</h3>
+                    <select class="mySelect" name="type" id="typesite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Минимализм</option>
+                        <option value="3">Яркий</option>
+                        <option value="4">Умеренный</option>
+                    </select>
+                    <h3>Адаптивность</h3>
+                    <select class="mySelect" name="type" id="typesite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Мобильное использование</option>
+                        <option value="3">Компьютерное использование</option>
+                        <option value="4">Совместное использование</option>
+                    </select>
+                    <hr>
+                    <div class="calculator_footer">
+                        <div class="row justify-content-between">
+                            <div class="col-6 days">
+                                <p class="text">Сроки</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="digit">0</p>
+
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="col-6 price">
+                                <p class="text">Стоимость</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="digit">0</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12">
+                                <button class="mx-auto">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="results">
+            <div class="results_container container">
+                <h2>Немного статистики</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+                    <div class="col-xxl-3
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
+                        <img src="img/smile.png" alt="">
+                        <h3>120</h3>
+                        <h3>Счастливых клиентов</h3>
+                    </div>
+                    <div class="col-xxl-3
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
+                        <img src="img/slash2.png" alt="">
+                        <h3>4,600</h3>
+                        <h3>Часов работы</h3>
+                    </div>
+                    <div class="col-xxl-3 
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
+                        <img src="img/done.png" alt="">
+                        <h3>340</h3>
+                        <h3>Проектов завершено</h3>
+                    </div>
+                    <div class="col-xxl-3 
+                                col-xl-3
+                                col-lg-3
+                                col-md-6
+                                col-sm-6
+                                col-xs-12">
+                        <img src="img/cup.png" alt="">
+                        <h3>23</h3>
+                        <h3>Наград получено</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <div class="comments_container container">
+                <h2>Отзывы</h2>
+                <hr>
+                <div class="row justify-content-center text-center"></div>
+                <div class="comment offset-xxl-2 col-xxl-8 offset-xxl-2">
+                    <img src="img/man.png" alt="">
+                    <p class="comments_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt et cumque consectetur eius quae molestiae in possimus quo ratione. Quae.</p>
+                    <p class="comments_author"> <span>Михаил</span>, Ген. Дироектор ПАО "Газпром"</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contacts">
+            <div class="contacts_container container">
+                <h2>Мои Контакты</h2>
+                <hr>
+                <p class="contacts_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati!</p>
+                <div class="contacts_data row justify-content-center text-center">
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3">
+                        <img src="img/geo.png" alt="">
+                        <p>Санкт-Петербург <br> Невский проспект 11</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/sms.png" alt="">
+                        <p>info@mycompany.ru</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/phone.png" alt="">
+                        <p>+7 999-999-99-99</p>
+                    </div>
+                </div>
+
+                <h3>Оставьте мне сообщение</h3>
+                <form action="#">
+                    <div class="contacts_inputs row justify-content-center text-center">
+                        <div class="col-12 col-sm-4 "><input type="text" placeholder="Имя"></div>
+                        <div class="col-12 col-sm-4 "><input class="secondInput " type="text" placeholder="Email"></div>
 
 
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-8">
+                            <textarea placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
 
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="contacts_social row row justify-content-center text-center">
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/facebook.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/ball.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/inst.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/git.png" alt=""></a>
+                    </div>
 
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/in.png" alt=""></a>
+                    </div>
 
-
+                </div>
+            </div>
+        </section>
     </main>
 
 
+    <footer>
+        <div class="map">
+            <img src="img/map.png" alt="">
+        </div>
 
-
-
-
-
+        <div class="footer">
+            <div class="footer_container">
+                <p>Copyright 2021 Панченко Илья. Design by Web</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+
+
+
+
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 
